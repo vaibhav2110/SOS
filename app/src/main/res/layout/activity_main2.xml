@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="0dp"
+
+    android:background="@drawable/bg2"
+    >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/text_bg">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="1st Number"
+            android:padding="15dp"
+            android:ems="10"
+            android:id="@+id/phn1"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+
+            />
+
+
+        <Button
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/store1"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+
+            android:onClick="insert1"/>
+        <!--
+        <Button
+            android:text="SHOW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/disp1"
+            android:layout_weight="1"
+            android:onClick="display1"/>
+            -->
+
+        <Button
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/del1"
+            android:background="@android:color/transparent"
+
+            android:layout_weight="1"
+            android:onClick="delete1"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="@drawable/text_bg"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="2nd Number"
+            android:ems="10"
+            android:id="@+id/phn2"
+            android:padding="15dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_weight="1" />
+
+        <Button
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/store2"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+
+            android:onClick="insert2"/>
+        <!--
+        <Button
+            android:text="SHOW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/disp2"
+            android:layout_weight="1"
+            android:onClick="display2"/>
+           -->
+
+        <Button
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/del2"
+            android:background="@android:color/transparent"
+
+            android:layout_weight="1"
+            android:onClick="delete2"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="@drawable/text_bg"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="3rd Number"
+            android:ems="10"
+            android:padding="15dp"
+            android:layout_marginLeft="10dp"
+
+            android:id="@+id/phn3"
+            android:layout_weight="1" />
+
+        <Button
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/store3"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+
+            android:onClick="insert3"/>
+        <!--
+
+        <Button
+            android:text="SHOW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/disp3"
+            android:layout_weight="1"
+            android:onClick="display3"/>
+            -->
+
+        <Button
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/del3"
+            android:background="@android:color/transparent"
+
+            android:layout_weight="1"
+            android:onClick="delete3"/>
+    </LinearLayout>
+    <!--
+    <Button
+        android:text="HELP !!!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/send" />
+        -->
+
+
+
+    <Button
+        android:text="Finish"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:id="@+id/fin" />
+
+
+</LinearLayout>

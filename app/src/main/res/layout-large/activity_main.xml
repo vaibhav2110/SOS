@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:fitsSystemWindows="true">
+
+
+
+    <!--
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="1st Number"
+            android:ems="10"
+            android:id="@+id/phn1"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="STORE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/store1"
+            android:layout_weight="1"
+            android:onClick="insert1"/>
+
+        <Button
+            android:text="SHOW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/disp1"
+            android:layout_weight="1"
+            android:onClick="display1"/>
+
+        <Button
+            android:text="DELETE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/del1"
+            android:layout_weight="1"
+            android:onClick="delete1"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="2nd Number"
+            android:ems="10"
+            android:id="@+id/phn2"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="STORE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/store2"
+            android:layout_weight="1"
+            android:onClick="insert2"/>
+
+        <Button
+            android:text="SHOW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/disp2"
+            android:layout_weight="1"
+            android:onClick="display2"/>
+
+        <Button
+            android:text="DELETE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/del2"
+            android:layout_weight="1"
+            android:onClick="delete2"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="3rd Number"
+            android:ems="10"
+            android:id="@+id/phn3"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="STORE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/store3"
+            android:layout_weight="1"
+            android:onClick="insert3"/>
+
+        <Button
+            android:text="SHOW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/disp3"
+            android:layout_weight="1"
+            android:onClick="display3"/>
+
+        <Button
+            android:text="DELETE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/del3"
+            android:layout_weight="1"
+            android:onClick="delete3"/>
+    </LinearLayout>
+
+    <Button
+        android:text="HELP !!!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/send" />
+
+    <TextView
+        android:hint="CURRENT LOCATION"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loc" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        >
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_alignParentBottom="true"
+            >
+
+            <Button android:id="@+id/button5"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="police"
+                android:background="@android:color/transparent"
+
+                android:layout_weight="1"/>
+
+            <Button android:id="@+id/button6"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="ambulance"
+                android:background="@android:color/transparent"
+
+
+                android:layout_weight="1"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+    -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_above="@+id/three"
+            >
+
+            <ImageView android:id="@+id/button5"
+                android:layout_height="200dp"
+                android:layout_width="200dp"
+                android:src="@drawable/cont"
+                android:layout_marginBottom="20dp"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"/>
+
+            <ImageView android:id="@+id/button6"
+                android:src="@drawable/help"
+                android:layout_height="200dp"
+                android:layout_width="200dp"
+                android:layout_marginBottom="20dp"
+                android:adjustViewBounds="true"
+
+                android:layout_weight="1"/>
+
+
+
+
+        </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/three"
+        >
+
+        <Button android:id="@+id/button1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:onClick="police"
+            android:background="@android:color/transparent"
+
+            android:layout_weight="1"/>
+
+        <Button android:id="@+id/button2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:onClick="ambulance"
+            android:background="@android:color/transparent"
+
+
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:onClick="fire"
+            android:background="@android:color/transparent"
+
+
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
